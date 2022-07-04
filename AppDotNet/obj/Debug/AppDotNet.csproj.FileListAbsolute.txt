@@ -1,0 +1,16 @@
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\bin\Debug\AppDotNet.exe.config
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\bin\Debug\AppDotNet.exe
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\bin\Debug\AppDotNet.pdb
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.csproj.AssemblyReference.cache
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.Properties.Resources.resources
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.csproj.GenerateResource.cache
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.csproj.CoreCompileInputs.cache
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.exe
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.pdb
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.frmFlores.resources
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.frmCriarFlor.resources
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\bin\Debug\EntityFramework.dll
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\bin\Debug\EntityFramework.xml
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.csproj.CopyComplete
