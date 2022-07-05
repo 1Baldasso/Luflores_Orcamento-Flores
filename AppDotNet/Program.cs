@@ -13,10 +13,7 @@ namespace AppDotNet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Application.Run(new frmFlores());
-            EUnidade unidade;
-            unidade = (EUnidade)Enum.Parse(typeof(EUnidade), "MaçoP");
-            Console.WriteLine((int)unidade);
+            Application.Run(new frmFlores());
         }
     }
 }

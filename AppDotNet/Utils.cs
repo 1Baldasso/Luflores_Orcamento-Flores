@@ -30,7 +30,7 @@ namespace AppDotNet
             btn.Text = "Detalhes";
             pnl.Controls.AddRange(controls);
         }
-        public static void AdicionarDbFlores(ref Flores flor)
+        public static void AdicionarDbFlores(Flores flor)
         {
             FloresContext db = new FloresContext();
             db.Flores.Add(flor);
@@ -78,6 +78,26 @@ namespace AppDotNet
             }
             //If we have no description attribute, just return the ToString of the enum
             return enumerationValue.ToString();
+        }
+        public static string GetEnumByDescription<T>(this string enumerationValue)
+        where T : struct
+        {
+            MemberInfo[] mi = typeof(T).GetMembers();
+            if (mi != null && mi.Length > 0)
+            {
+                foreach (var member in mi)
+                {
+                    object[] attrs = member.GetCustomAttributes(typeof(DescriptionAttribute), false);
+                    if (attrs != null && attrs.Length > 0)
+                    {
+                        if (enumerationValue == ((DescriptionAttribute)attrs[0]).Description)
+                        {
+                            return member.Name;
+                        }
+                    }
+                }
+            }
+            throw new ArgumentException();
         }
     }
 }

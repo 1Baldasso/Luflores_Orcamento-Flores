@@ -21,10 +21,9 @@ namespace AppDotNet
 
         private void btnCreateFlower_Click(object sender, EventArgs e)
         {
-            new frmCriarFlor().ShowDialog();
+            new FrmCriarFlor().ShowDialog();
         }
 
-        int i = 1;
         private void frmFlores_Activated(object sender, EventArgs e)
         {
             pnlFlowers.Controls.Clear();

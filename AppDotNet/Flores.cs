@@ -30,7 +30,7 @@ namespace AppDotNet
             this.Valor = v;
             this.Unidade = e;
         }
-        public bool isComplete()
+        public bool IsComplete()
         {
             foreach (var prop in this.GetType().GetProperties())
             {
@@ -44,19 +44,19 @@ namespace AppDotNet
             return true;
         }
 
-        public (string nome, double valor) getValorUnitario()
+        public (string nome, double valor) GetValorUnitario()
         {
             return (this.Nome, this.Valor / (int)Unidade);
         }
-        public static string getFornecedorBarato(List<Flores> flores, string nome)
+        public static string GetFornecedorBarato(List<Flores> flores, string nome)
         {
             var flor = flores.FindAll(q => q.Nome == nome);
             Flores maisbarata = new Flores(500, EUnidade.Unidade);
             double valorF, valorB;
             foreach (var f in flor)
             {
-                (_, valorF) = f.getValorUnitario();
-                (_, valorB) = maisbarata.getValorUnitario();
+                (_, valorF) = f.GetValorUnitario();
+                (_, valorB) = maisbarata.GetValorUnitario();
 
                 if (valorF < valorB)
                 {

@@ -1,7 +1,7 @@
 ﻿
 namespace AppDotNet
 {
-    partial class frmCriarFlor
+    partial class FrmCriarFlor
     {
         /// <summary>
         /// Required designer variable.
@@ -38,7 +38,7 @@ namespace AppDotNet
             this.btnClear = new System.Windows.Forms.Button();
             this.btnCriar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbxFornecedor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -95,7 +95,7 @@ namespace AppDotNet
             this.mtbValor.Name = "mtbValor";
             this.mtbValor.Size = new System.Drawing.Size(114, 30);
             this.mtbValor.TabIndex = 5;
-            this.mtbValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtbValor_KeyPress);
+            this.mtbValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MtbValor_KeyPress);
             // 
             // btnClear
             // 
@@ -105,7 +105,7 @@ namespace AppDotNet
             this.btnClear.TabIndex = 6;
             this.btnClear.Text = "Limpar";
             this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // btnCriar
             // 
@@ -116,7 +116,7 @@ namespace AppDotNet
             this.btnCriar.TabIndex = 7;
             this.btnCriar.Text = "Criar";
             this.btnCriar.UseVisualStyleBackColor = true;
-            this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
+            this.btnCriar.Click += new System.EventHandler(this.BtnCriar_Click);
             // 
             // label4
             // 
@@ -128,24 +128,24 @@ namespace AppDotNet
             this.label4.TabIndex = 8;
             this.label4.Text = "Fornecedor";
             // 
-            // comboBox2
+            // cbxFornecedor
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbxFornecedor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxFornecedor.Items.AddRange(new object[] {
             "Seu Luiz",
             "Wagner",
             "Murilo"});
-            this.comboBox2.Location = new System.Drawing.Point(12, 259);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(210, 31);
-            this.comboBox2.TabIndex = 10;
+            this.cbxFornecedor.Location = new System.Drawing.Point(12, 259);
+            this.cbxFornecedor.Name = "cbxFornecedor";
+            this.cbxFornecedor.Size = new System.Drawing.Size(210, 31);
+            this.cbxFornecedor.TabIndex = 10;
             // 
             // frmCriarFlor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(707, 313);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbxFornecedor);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCriar);
             this.Controls.Add(this.btnClear);
@@ -158,7 +158,7 @@ namespace AppDotNet
             this.Name = "frmCriarFlor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Criar Flor";
-            this.Load += new System.EventHandler(this.frmCreateFlower_Load);
+            this.Load += new System.EventHandler(this.FrmCreateFlower_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,6 +175,6 @@ namespace AppDotNet
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnCriar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbxFornecedor;
     }
 }
