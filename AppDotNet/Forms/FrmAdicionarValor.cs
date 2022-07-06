@@ -4,12 +4,12 @@ using System.Linq;
 
 namespace AppDotNet
 {
-    public partial class FrmCriarFlor : Form
+    public partial class FrmAdicionarValor : Form
     {
         string mychar = "00000";
         string mtxt;
         int mypos = 5;
-        public FrmCriarFlor()
+        public FrmAdicionarValor()
         {
             InitializeComponent();
         }
@@ -30,17 +30,6 @@ namespace AppDotNet
             }
         }
 
-
-        private void FrmCreateFlower_Load(object sender, System.EventArgs e)
-        {
-            mtbValor.Text = mychar;
-            var values = Enum.GetValues(typeof(EUnidade));
-            foreach (var v in values)
-            {
-                cbxUnidade.Items.Add(Extensions.GetDescription<EUnidade>((EUnidade)v));
-            }
-        }
-
         private void BtnClear_Click(object sender, EventArgs e)
         {
             mtxt = "";
@@ -52,21 +41,8 @@ namespace AppDotNet
 
         private void BtnCriar_Click(object sender, EventArgs e)
         {
-            string nome, fornecedor;
-            EUnidade unidade;
+            string fornecedor;
             double valor;
-            if (txbNomeFlor.Text.ToString() == "")
-            {
-                MessageBox.Show("Nome da flor não pode ser vazio.");
-                return;
-            }
-            nome = txbNomeFlor.Text;
-            if (cbxUnidade.SelectedItem == null)
-            {
-                MessageBox.Show("Por favor selecione uma Unidade.");
-                return;
-            }
-            unidade = (EUnidade)Enum.Parse(typeof(EUnidade), cbxUnidade.SelectedItem.ToString().GetEnumByDescription<EUnidade>());
             if (cbxFornecedor.SelectedItem == null)
             {
                 MessageBox.Show("Por favor selecione uma Fornecedor.");
@@ -79,7 +55,7 @@ namespace AppDotNet
                 return;
             }
             valor = double.Parse(mtbValor.Text.Substring(3));
-            Utils.AdicionarDbFlores(new Flores(nome, valor, unidade, fornecedor));
+            this.Close();
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace AppDotNet
 {
-    partial class FrmCriarFlor
+    partial class FrmAdicionarValor
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,15 @@ namespace AppDotNet
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txbNomeFlor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbxUnidade = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.mtbValor = new System.Windows.Forms.MaskedTextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnCriar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.cbxFornecedor = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -51,14 +51,6 @@ namespace AppDotNet
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome Flor";
             // 
-            // txbNomeFlor
-            // 
-            this.txbNomeFlor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNomeFlor.Location = new System.Drawing.Point(12, 51);
-            this.txbNomeFlor.Name = "txbNomeFlor";
-            this.txbNomeFlor.Size = new System.Drawing.Size(686, 30);
-            this.txbNomeFlor.TabIndex = 1;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -68,14 +60,6 @@ namespace AppDotNet
             this.label2.Size = new System.Drawing.Size(108, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "Unidade";
-            // 
-            // cbxUnidade
-            // 
-            this.cbxUnidade.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxUnidade.Location = new System.Drawing.Point(12, 149);
-            this.cbxUnidade.Name = "cbxUnidade";
-            this.cbxUnidade.Size = new System.Drawing.Size(210, 31);
-            this.cbxUnidade.TabIndex = 3;
             // 
             // label3
             // 
@@ -114,7 +98,7 @@ namespace AppDotNet
             this.btnCriar.Name = "btnCriar";
             this.btnCriar.Size = new System.Drawing.Size(205, 159);
             this.btnCriar.TabIndex = 7;
-            this.btnCriar.Text = "Criar";
+            this.btnCriar.Text = "Adicionar Valores";
             this.btnCriar.UseVisualStyleBackColor = true;
             this.btnCriar.Click += new System.EventHandler(this.BtnCriar_Click);
             // 
@@ -140,25 +124,42 @@ namespace AppDotNet
             this.cbxFornecedor.Size = new System.Drawing.Size(210, 31);
             this.cbxFornecedor.TabIndex = 10;
             // 
-            // frmCriarFlor
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 23);
+            this.label5.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(13, 157);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 23);
+            this.label6.TabIndex = 12;
+            // 
+            // FrmAdicionarValor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(707, 313);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.cbxFornecedor);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCriar);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.mtbValor);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.cbxUnidade);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txbNomeFlor);
             this.Controls.Add(this.label1);
-            this.Name = "frmCriarFlor";
+            this.Name = "FrmAdicionarValor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Criar Flor";
-            this.Load += new System.EventHandler(this.FrmCreateFlower_Load);
+            this.Text = "Adicionar Valor";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,14 +168,14 @@ namespace AppDotNet
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txbNomeFlor;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbxUnidade;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox mtbValor;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnCriar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbxFornecedor;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

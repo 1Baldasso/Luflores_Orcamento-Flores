@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
+using AppDotNet.Dados;
 
 namespace AppDotNet
 {
@@ -13,7 +15,7 @@ namespace AppDotNet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmFlores());
+            Application.Run(new FrmFlores());
         }
     }
 }

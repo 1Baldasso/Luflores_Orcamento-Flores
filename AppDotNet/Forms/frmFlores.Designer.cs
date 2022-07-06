@@ -1,7 +1,7 @@
 ﻿
 namespace AppDotNet
 {
-    partial class frmFlores
+    partial class FrmFlores
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -41,6 +41,7 @@ namespace AppDotNet
             this.pnlFlowers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlFlowers.AutoScroll = true;
             this.pnlFlowers.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnlFlowers.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlFlowers.Location = new System.Drawing.Point(12, 69);
@@ -71,7 +72,7 @@ namespace AppDotNet
             this.btnCriarFlor.TabIndex = 2;
             this.btnCriarFlor.Text = "Criar Flor";
             this.btnCriarFlor.UseVisualStyleBackColor = true;
-            this.btnCriarFlor.Click += new System.EventHandler(this.btnCreateFlower_Click);
+            this.btnCriarFlor.Click += new System.EventHandler(this.BtnCreateFlower_Click);
             // 
             // btnEditarFlores
             // 
@@ -101,7 +102,7 @@ namespace AppDotNet
             this.btnAdicionarFornecedor.Text = "Adicionar Fornecedor";
             this.btnAdicionarFornecedor.UseVisualStyleBackColor = true;
             // 
-            // frmFlores
+            // FrmFlores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -112,11 +113,12 @@ namespace AppDotNet
             this.Controls.Add(this.btnCriarFlor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlFlowers);
-            this.Name = "frmFlores";
+            this.Name = "FrmFlores";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Flores";
-            this.Activated += new System.EventHandler(this.frmFlores_Activated);
+            this.Activated += new System.EventHandler(this.FrmFlores_Activated);
+            this.Resize += new System.EventHandler(this.FrmFlores_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 

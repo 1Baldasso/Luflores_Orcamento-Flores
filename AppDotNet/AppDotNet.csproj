@@ -55,27 +55,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Flores.cs" />
-    <Compile Include="frmCriarFlor.cs">
+    <Compile Include="Dados\Classes\Arranjo.cs" />
+    <Compile Include="Dados\Classes\Evento.cs" />
+    <Compile Include="Dados\Classes\Flor.cs" />
+    <Compile Include="Dados\Classes\Fornecedor.cs" />
+    <Compile Include="Dados\Classes\ValorFlor.cs" />
+    <Compile Include="Forms\FrmAdicionarFornecedorFlor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCriarFlor.Designer.cs">
-      <DependentUpon>frmCriarFlor.cs</DependentUpon>
+    <Compile Include="Forms\FrmAdicionarFornecedorFlor.Designer.cs">
+      <DependentUpon>FrmAdicionarFornecedorFlor.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmFlores.cs">
+    <Compile Include="Forms\FrmAdicionarValor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFlores.Designer.cs">
+    <Compile Include="Forms\FrmAdicionarValor.Designer.cs">
+      <DependentUpon>FrmAdicionarValor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCriarFlor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCriarFlor.Designer.cs">
+      <DependentUpon>FrmCriarFlor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDetalhesFlor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDetalhesFlor.Designer.cs">
+      <DependentUpon>FrmDetalhesFlor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFlores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFlores.Designer.cs">
       <DependentUpon>frmFlores.cs</DependentUpon>
     </Compile>
-    <Compile Include="FloresContext.cs" />
+    <Compile Include="Dados\FloresContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils.cs" />
-    <EmbeddedResource Include="frmCriarFlor.resx">
-      <DependentUpon>frmCriarFlor.cs</DependentUpon>
+    <Compile Include="Utils\Utils.cs" />
+    <EmbeddedResource Include="Forms\FrmAdicionarFornecedorFlor.resx">
+      <DependentUpon>FrmAdicionarFornecedorFlor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFlores.resx">
+    <EmbeddedResource Include="Forms\FrmAdicionarValor.resx">
+      <DependentUpon>FrmAdicionarValor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCriarFlor.resx">
+      <DependentUpon>FrmCriarFlor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDetalhesFlor.resx">
+      <DependentUpon>FrmDetalhesFlor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFlores.resx">
       <DependentUpon>frmFlores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -107,5 +138,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
