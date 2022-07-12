@@ -107,6 +107,7 @@ namespace AppDotNet.Forms
             this.BtnEditarValores.TabIndex = 6;
             this.BtnEditarValores.Text = "Editar Valores";
             this.BtnEditarValores.UseVisualStyleBackColor = true;
+            this.BtnEditarValores.Click += new System.EventHandler(this.BtnEditarValores_Click);
             // 
             // label3
             // 
@@ -146,6 +147,7 @@ namespace AppDotNet.Forms
             this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(820, 500);
             this.Name = "FrmDetalhesFlor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDetalhesFlor";
             this.Load += new System.EventHandler(this.FrmDetalhesFlor_Load);
             this.ResumeLayout(false);

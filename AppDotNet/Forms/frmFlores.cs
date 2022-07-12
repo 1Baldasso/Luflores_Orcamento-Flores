@@ -27,5 +27,10 @@ namespace AppDotNet
             Utils.setChanged(true);
             Utils.CheckChangedDB(ref pnlFlowers);
         }
+
+        private void btnAdicionarFornecedor_Click(object sender, EventArgs e)
+        {
+            new FrmAdicionarFornecedor().ShowDialog();
+        }
     }
 }

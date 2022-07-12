@@ -95,6 +95,7 @@ namespace AppDotNet.Forms
             this.Controls.Add(this.label1);
             this.Name = "FrmCriarFlor";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Criar Flor";
             this.Load += new System.EventHandler(this.FrmCriarFlor_Load);
             this.ResumeLayout(false);

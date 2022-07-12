@@ -9,9 +9,11 @@ namespace AppDotNet
         string mychar = "00000";
         string mtxt;
         int mypos = 5;
-        public FrmAdicionarValor()
+        Flor f;
+        public FrmAdicionarValor(Flor f)
         {
             InitializeComponent();
+            this.f = f;
         }
 
         private void MtbValor_KeyPress(object sender, KeyPressEventArgs e)
@@ -55,7 +57,17 @@ namespace AppDotNet
                 return;
             }
             valor = double.Parse(mtbValor.Text.Substring(3));
+            Utils.AddValorFlor(valor, f, fornecedor);
+
             this.Close();
+        }
+
+        private void FrmAdicionarValor_Load(object sender, EventArgs e)
+        {
+            foreach (var f in Utils.GetFornecedores())
+            {
+                cbxFornecedor.Items.Add(f.Nome.ToString());
+            }
         }
     }
 }

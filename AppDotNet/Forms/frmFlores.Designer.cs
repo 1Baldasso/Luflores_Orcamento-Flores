@@ -32,7 +32,6 @@ namespace AppDotNet
             this.pnlFlowers = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCriarFlor = new System.Windows.Forms.Button();
-            this.btnEditarFlores = new System.Windows.Forms.Button();
             this.btnAdicionarFornecedor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -74,20 +73,6 @@ namespace AppDotNet
             this.btnCriarFlor.UseVisualStyleBackColor = true;
             this.btnCriarFlor.Click += new System.EventHandler(this.BtnCreateFlower_Click);
             // 
-            // btnEditarFlores
-            // 
-            this.btnEditarFlores.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditarFlores.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnEditarFlores.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnEditarFlores.FlatAppearance.BorderSize = 2;
-            this.btnEditarFlores.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarFlores.Location = new System.Drawing.Point(727, 166);
-            this.btnEditarFlores.Name = "btnEditarFlores";
-            this.btnEditarFlores.Size = new System.Drawing.Size(134, 61);
-            this.btnEditarFlores.TabIndex = 3;
-            this.btnEditarFlores.Text = "Editar Flor";
-            this.btnEditarFlores.UseVisualStyleBackColor = true;
-            // 
             // btnAdicionarFornecedor
             // 
             this.btnAdicionarFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -95,12 +80,13 @@ namespace AppDotNet
             this.btnAdicionarFornecedor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnAdicionarFornecedor.FlatAppearance.BorderSize = 2;
             this.btnAdicionarFornecedor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionarFornecedor.Location = new System.Drawing.Point(727, 252);
+            this.btnAdicionarFornecedor.Location = new System.Drawing.Point(727, 154);
             this.btnAdicionarFornecedor.Name = "btnAdicionarFornecedor";
             this.btnAdicionarFornecedor.Size = new System.Drawing.Size(134, 76);
             this.btnAdicionarFornecedor.TabIndex = 4;
             this.btnAdicionarFornecedor.Text = "Adicionar Fornecedor";
             this.btnAdicionarFornecedor.UseVisualStyleBackColor = true;
+            this.btnAdicionarFornecedor.Click += new System.EventHandler(this.btnAdicionarFornecedor_Click);
             // 
             // FrmFlores
             // 
@@ -109,7 +95,6 @@ namespace AppDotNet
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(873, 462);
             this.Controls.Add(this.btnAdicionarFornecedor);
-            this.Controls.Add(this.btnEditarFlores);
             this.Controls.Add(this.btnCriarFlor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlFlowers);
@@ -129,7 +114,6 @@ namespace AppDotNet
         private System.Windows.Forms.Panel pnlFlowers;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCriarFlor;
-        private System.Windows.Forms.Button btnEditarFlores;
         private System.Windows.Forms.Button btnAdicionarFornecedor;
     }
 }

@@ -115,10 +115,6 @@ namespace AppDotNet
             // cbxFornecedor
             // 
             this.cbxFornecedor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxFornecedor.Items.AddRange(new object[] {
-            "Seu Luiz",
-            "Wagner",
-            "Murilo"});
             this.cbxFornecedor.Location = new System.Drawing.Point(12, 259);
             this.cbxFornecedor.Name = "cbxFornecedor";
             this.cbxFornecedor.Size = new System.Drawing.Size(210, 31);
@@ -160,6 +156,7 @@ namespace AppDotNet
             this.Name = "FrmAdicionarValor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Adicionar Valor";
+            this.Load += new System.EventHandler(this.FrmAdicionarValor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

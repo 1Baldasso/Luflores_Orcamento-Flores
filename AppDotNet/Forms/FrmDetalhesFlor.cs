@@ -45,5 +45,10 @@ namespace AppDotNet.Forms
         {
             new FrmAdicionarFornecedorFlor(f).ShowDialog();
         }
+
+        private void BtnEditarValores_Click(object sender, EventArgs e)
+        {
+            new FrmAdicionarValor(f).ShowDialog();
+        }
     }
 }

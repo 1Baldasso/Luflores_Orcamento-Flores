@@ -19,6 +19,10 @@ namespace AppDotNet
             this.Nome = nome;
             this.Unidade = unidade;
         }
+        public void AddFornecedor(Fornecedor fo)
+        {
+            Fornecedor.Add(fo);
+        }
         public bool IsComplete()
         {
             foreach (var prop in this.GetType().GetProperties())

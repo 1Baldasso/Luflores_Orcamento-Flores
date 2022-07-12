@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using AppDotNet.Forms;
+using AppDotNet.Dados;
 
 namespace AppDotNet
 {
@@ -68,6 +69,24 @@ namespace AppDotNet
                 }
                 changed = false;
             }
+        }
+        public static void AddValorFlor(double valor, Flor flor, string fornecedor)
+        {
+            FloresContext db = new FloresContext();
+            Fornecedor f = db.Fornecedores.Find(fornecedor);
+            db.ValorFlor.Add(new ValorFlor(f, flor, valor));
+            db.SaveChanges();
+        }
+        public static void AddFornecedor(Fornecedor fo)
+        {
+            FloresContext db = new FloresContext();
+            db.Fornecedores.Add(fo);
+            db.SaveChanges();
+        }
+        public static List<Fornecedor> GetFornecedores()
+        {
+            FloresContext db = new FloresContext();
+            return db.Fornecedores.ToList<Fornecedor>();
         }
     }
     public enum Unidade

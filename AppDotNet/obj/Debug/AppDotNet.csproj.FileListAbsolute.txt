@@ -17,3 +17,4 @@ C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.FrmAdicionar
 C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.Forms.FrmCriarFlor.resources
 C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.Forms.FrmDetalhesFlor.resources
 C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.Forms.FrmAdicionarFornecedorFlor.resources
+C:\Users\lucas\source\repos\AppDotNet\AppDotNet\obj\Debug\AppDotNet.Forms.FrmAdicionarFornecedor.resources
